@@ -1,0 +1,128 @@
+/* 📌 Full-Screen Styling */
+.prisoner-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: #000000; /* Pure black theme */
+    color: white;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* 📌 Details Box */
+.details-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(20, 20, 20, 0.8);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.1);
+    width: 70%;
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+/* 📌 Title */
+.details-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #444;
+    padding-bottom: 10px;
+}
+
+/* 📌 Table Layout for Clean Alignment */
+.details-table {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Left column: Heading, Right column: Data */
+    gap: 15px 20px; /* Proper spacing */
+    text-align: left;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+}
+
+/* 📌 Headings */
+.details-table strong {
+    font-weight: bold;
+    color: #ffcc00; /* Golden color for contrast */
+    text-transform: uppercase;
+}
+
+/* 📌 Data Styling */
+.details-table span {
+    color: #ffffff;
+    font-weight: 500;
+    text-align: left;
+}
+
+/* 📌 Case Description Styling */
+.case-description-container {
+    margin-top: 30px;
+    text-align: left;
+    padding: 20px;
+    background: rgba(30, 30, 30, 0.9);
+    border-radius: 10px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    border-left: 4px solid #000000;
+}
+
+/* 📌 Blue "Check" Button Styling */
+.check-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #1E90FF; /* Dodger Blue */
+    border: none;
+    color: #f2f1ed;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 30px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.check-button:hover {
+    background-color: #1C86EE; /* Slightly darker blue on hover */
+    transform: scale(1.05);
+}
+
+/* 📌 Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* 📌 Responsive Design */
+@media (max-width: 768px) {
+    .details-box {
+        width: 90%;
+        padding: 30px;
+    }
+    .details-table {
+        grid-template-columns: 1fr; /* Stack in a single column for mobile */
+        font-size: 1.3rem;
+    }
+    .case-description-container {
+        font-size: 1.3rem;
+    }
+    .check-button {
+        font-size: 1.3rem;
+    }
+}

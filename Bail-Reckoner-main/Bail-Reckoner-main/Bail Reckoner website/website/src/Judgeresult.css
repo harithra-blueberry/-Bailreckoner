@@ -1,0 +1,150 @@
+/* Container styling */
+.bail-result-container {
+  max-width: 650px;
+  margin: 50px auto;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Title styling */
+.bail-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+/* Bail status styling */
+.risk-level {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 8px;
+  display: inline-block;
+  width: 60%;
+}
+
+/* Risk level colors */
+.high-risk {
+  color: #d9534f;
+  background-color: #f8d7da;
+}
+
+.medium-risk {
+  color: #856404;
+  background-color: #fff3cd;
+}
+
+.low-risk {
+  color: #155724;
+  background-color: #d4edda;
+}
+
+/* Factors list */
+.factors-title {
+  font-size: 20px;
+  color: #333;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.factors-list {
+  text-align: left;
+  margin-top: 10px;
+  padding-left: 0;
+}
+
+.factors-list li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  list-style: none;
+  border-left: 5px solid #007bff;
+}
+/* Make the factors list more visible */
+.factors-list li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 5px;
+  background-color: #f0f0f0; /* Light grey instead of nearly white */
+  list-style: none;
+  border-left: 5px solid #007bff;
+  color: #222; /* Darker text color */
+  font-weight: bold;
+}
+
+/* Ensure text is visible on light backgrounds */
+.factors-list li strong {
+  color: #000; /* Make feature names black */
+}
+.result-heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.risk-level-box {
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 1rem auto;
+  text-align: center;
+  width: fit-content;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.risk-level-box.low-risk {
+  background-color: #000000;
+  color: #155724;
+}
+
+.risk-level-box.medium-risk {
+  background-color: #000000;
+  color: #856404;
+}
+
+.risk-level-box.high-risk {
+  background-color: #000000;
+  color: #721c24;
+}
+/* Apply styles only to Judgeresult page */
+.judgeresult-container h1,
+.judgeresult-container h2,
+.judgeresult-container h3,
+.judgeresult-container p,
+.judgeresult-container span
+ {
+  color: rgb(255, 255, 255) !important;
+}
+
+/* Selection styling */
+.judgeresult-container ::selection {
+  background: #0033cc; /* Dark blue */
+  color: white !important;
+}
+
+
+
+/* Back button */
+.back-button {
+  margin-top: 20px;
+  padding: 12px 18px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}

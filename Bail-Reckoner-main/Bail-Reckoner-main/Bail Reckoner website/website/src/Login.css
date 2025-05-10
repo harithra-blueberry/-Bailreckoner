@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  text-align: center;
+  height: 200vh; /* Extra height for scroll effect */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Splash Screen */
+.splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 1s ease-in-out;
+  z-index: 2;
+}
+
+.splash-logo {
+  width: 50%;
+  height: 100%;
+  background-color: black;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Hide splash screen on scroll */
+.splash-screen.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Login Content */
+.login-content {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  margin-top: 50vh; /* Appears after scrolling */
+}
+
+/* Show login content when scrolled */
+.login-content.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Login title */
+.login-title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 6rem;
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+/* Login options */
+.login-options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 7rem;
+}
+
+/* Button Styling */
+.login-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1eded;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  position: relative;
+  animation: fadeInUp 1s ease-in-out;
+}
+.login-button:hover {
+  transform: scale(1.1); /* Increases size by 10% */
+}
+
+/* Image inside button */
+.login-button img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Text outside button */
+.login-text {
+  font-weight: bold;
+  margin-top: 15rem;
+  text-align: center;
+  color: white;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

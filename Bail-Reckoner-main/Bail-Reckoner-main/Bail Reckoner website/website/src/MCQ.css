@@ -1,0 +1,73 @@
+.prisoner-details-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #0f0f0f;
+  padding: 20px;
+}
+
+.details-box {
+  background: #0f0f0f;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 450px;
+  width: 100%;
+  text-align: left;
+}
+
+.details-box h3 {
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #f8f0f0;
+  text-align: center;
+}
+
+.bail-factor-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bail-factor-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.bail-factor-form select {
+  margin-top: 8px;
+  padding: 10px 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border 0.3s ease;
+}
+
+.bail-factor-form select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(7, 7, 7, 0.2);
+}
+
+button {
+  margin-top: 10px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-1px);
+}

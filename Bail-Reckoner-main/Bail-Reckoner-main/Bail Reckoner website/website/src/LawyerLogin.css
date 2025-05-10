@@ -1,0 +1,47 @@
+.lawyer-cases-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .cases-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .cases-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .case-item {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .case-id-button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .case-id-button:hover {
+    background-color: #45a049; /* Darker Green */
+  }
+  
+  .case-item h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .case-item p {
+    margin: 5px 0;
+  }
+  
